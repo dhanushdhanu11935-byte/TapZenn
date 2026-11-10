@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TapZen | Next-Gen Smart NFC Cards & Tap Solutions</title>
+  <meta name="description" content="TapZen produces premium smart NFC business cards, countertop review stands, and tap tags. Tap, Connect, Grow with zero apps required.">
+  <link rel="icon" type="image/jpeg" href="assets/tapzen-logo.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Subtle ambient grid overlay -->
+  <div class="bg-grid-overlay"></div>
+
+  <!-- ==========================================================================
+       Header / Navigation Bar
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo-wrap">
+        <img src="assets/tapzen-logo.jpg" alt="TapZen Logo" class="brand-logo-img">
+        <div class="brand-name-group">
+          <div class="brand-title">
+            <span class="tap">Tap</span><span class="zen">Zen</span>
+          </div>
+          <span class="brand-tagline-mini">TAP • CONNECT • GROW</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#products" class="nav-link">Products</a></li>
+          <li><a href="#card-studio" class="nav-link">Card Studio</a></li>
+          <li><a href="#simulator" class="nav-link">Tap Demo</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#comparison" class="nav-link">Why NFC</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Sound Effect Toggle -->
+        <button id="sound-toggle-btn" class="cart-btn-trigger" title="Toggle NFC Sound FX">
+          <i class="fas fa-volume-up"></i>
+        </button>
+
+        <!-- Shopping Cart Trigger -->
+        <button id="navbar-cart-trigger" class="cart-btn-trigger" title="View Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count-badge" style="display: none;">0</span>
+        </button>
+
+        <!-- Primary CTA -->
+        <a href="#card-studio" class="btn btn-primary btn-sm">
+          <span>Create Card</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section with 3D Tilt Card & Interactive Sheen
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="hero-aura-glow"></div>
+    <div class="container hero-grid">
+      
+      <!-- Left Column: Copy & Actions -->
+      <div class="hero-content">
+        <div class="hero-announcement">
+          <span class="badge badge-red badge-glow">NEW 2026 LINEUP</span>
+          <span>Next-Generation NFC 216 Microchips</span>
+        </div>
+
+        <h1 class="hero-title">
+          One Tap.<br>
+          <span class="text-gradient-red">Infinite Connections.</span>
+        </h1>
+
+        <p class="hero-description">
+          Replace hundreds of paper business cards with TapZen’s luxury smart NFC products. Share your contact info, social links, portfolio, or capture 5-star Google reviews with a single tap. <strong>Zero apps required.</strong>
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#card-studio" class="btn btn-primary btn-lg">
+            <i class="fas fa-wand-magic-sparkles"></i>
+            <span>Design Your Card</span>
+          </a>
+          <a href="#simulator" class="btn btn-secondary btn-lg">
+            <i class="fas fa-mobile-screen"></i>
+            <span>Experience Tap Demo</span>
+          </a>
+        </div>
+
+        <!-- Social Proof Stats -->
+        <div class="hero-social-proof">
+          <div class="avatar-stack">
+            <div class="avatar-stack-item"><i class="fas fa-user-tie"></i></div>
+            <div class="avatar-stack-item"><i class="fas fa-user-astronaut"></i></div>
+            <div class="avatar-stack-item"><i class="fas fa-user-ninja"></i></div>
+            <div class="avatar-stack-item">+1K</div>
+          </div>
+          <div>
+            <div class="hero-rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="hero-rating-text">
+              <strong>4.9 / 5</strong> from 1,200+ founders, creators & businesses
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Interactive 3D Card Showcase -->
+      <div class="hero-visual-card">
+        <div class="card-3d-scene" id="hero-3d-scene">
+          <div class="card-3d-object" id="hero-3d-object">
+            
+            <!-- Card Front -->
+            <div class="card-face card-face-front card-finish-crimson-carbon">
+              <div class="card-sheen"></div>
+              
+              <div class="card-top-row">
+                <div class="card-brand-display">
+                  <img src="assets/tapzen-logo.jpg" alt="TapZen Logo">
+                  <span>Tap<span class="text-red">Zen</span></span>
+                </div>
+                <div class="card-chip-module">
+                  <div class="microchip-graphic"></div>
+                  <div class="nfc-icon-radiate">
+                    <svg class="nfc-wave-svg" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-bottom-row">
+                <div class="card-user-info">
+                  <div class="card-holder-name" style="font-size: 0.95rem; line-height: 1.25; letter-spacing: 0.02em;">MOHAMMAD SUZAIN AND DHANUSH KUMAR K</div>
+                  <div class="card-holder-role">FOUNDERS</div>
+                </div>
+                <div class="card-company-tag">TapZen</div>
+              </div>
+            </div>
+
+            <!-- Card Back -->
+            <div class="card-face card-face-back">
+              <div class="card-magstripe"></div>
+              <div class="card-back-body">
+                <div class="card-qr-box">
+                  <!-- Vector QR Code Fallback -->
+                  <svg viewBox="0 0 100 100" fill="#000">
+                    <rect x="10" y="10" width="25" height="25" fill="#000"/>
+                    <rect x="15" y="15" width="15" height="15" fill="#fff"/>
+                    <rect x="18" y="18" width="9" height="9" fill="#000"/>
+                    <rect x="65" y="10" width="25" height="25" fill="#000"/>
+                    <rect x="70" y="15" width="15" height="15" fill="#fff"/>
+                    <rect x="73" y="18" width="9" height="9" fill="#000"/>
+                    <rect x="10" y="65" width="25" height="25" fill="#000"/>
+                    <rect x="15" y="70" width="15" height="15" fill="#fff"/>
+                    <rect x="18" y="73" width="9" height="9" fill="#000"/>
+                    <rect x="42" y="15" width="8" height="8" fill="#000"/>
+                    <rect x="42" y="42" width="16" height="16" fill="#ff1a35"/>
+                    <rect x="65" y="65" width="8" height="8" fill="#000"/>
+                    <rect x="78" y="78" width="12" height="12" fill="#000"/>
+                    <rect x="65" y="45" width="10" height="8" fill="#000"/>
+                  </svg>
+                </div>
+                <div class="card-back-instructions">
+                  <strong>TAP PHONE HERE</strong>
+                  <span>NXP NTAG216 • High Capacity</span>
+                  <div style="font-size:0.65rem; color:var(--text-muted); margin-top:4px;">Backup camera QR code if NFC is disabled on target device.</div>
+                </div>
+                <div class="card-hologram-seal">
+                  <span>TZ</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- 3D Card Interactive Controls -->
+        <div class="card-controls-bar">
+          <button id="hero-flip-card-btn" class="control-pill-btn">
+            <i class="fas fa-sync-alt"></i> Flip Card (Back)
+          </button>
+          <span style="font-size:0.75rem; color:var(--text-muted);">
+            <i class="fas fa-hand-pointer" style="color:var(--accent-red);"></i> Move mouse or drag to tilt in 3D
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Stats Strip
+       ========================================================================== -->
+  <section class="stats-strip-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number text-gradient-red">10K+</div>
+          <div class="stat-label">Connections Made</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient-silver">0.18s</div>
+          <div class="stat-label">Instant Tap Speed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient-red">100%</div>
+          <div class="stat-label">iOS & Android Compatible</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number text-gradient-silver">0 Trees</div>
+          <div class="stat-label">Cut Down (Paperless)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Live Interactive Phone Tap Simulator ("Experience The Tap")
+       ========================================================================== -->
+  <section class="demo-section" id="simulator">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-red section-tag">LIVE INTERACTIVE LAB</span>
+        <h2>Experience The Tap</h2>
+        <p>Test exactly what happens when someone taps your TapZen smart NFC card. Try it below with full audio & haptic feedback!</p>
+      </div>
+
+      <div class="tap-demo-stage">
+        <div class="tap-stage-grid">
+          
+          <!-- Simulator Left: Phone Mockup -->
+          <div class="tap-interaction-area">
+            
+            <div class="phone-simulator-wrapper" id="simulator-phone-body">
+              <div class="phone-island">
+                <div class="phone-speaker"></div>
+              </div>
+
+              <!-- Push Notification Banner (Drops on tap) -->
+              <div class="phone-notification" id="simulator-notification">
+                <div class="notif-header">
+                  <div class="notif-app-info">
+                    <div class="notif-app-icon"></div>
+                    <span>TapZen NFC • Safari</span>
+                  </div>
+                  <span class="notif-time">Just Now</span>
+                </div>
+                <div class="notif-body">
+                  <div>
+                    TEAM TapZen
+                    <span>Tap to view Website and Order your Products</span>
+                  </div>
+                  <i class="fas fa-chevron-right" style="color:var(--accent-red); font-size:0.8rem;"></i>
+                </div>
+              </div>
+
+              <div class="phone-screen">
+                
+                <!-- Lockscreen State (Before tap) -->
+                <div class="lockscreen-idle" id="simulator-lockscreen">
+                  <div class="lockscreen-clock">12:14</div>
+                  <div class="lockscreen-date">Tuesday, November 10</div>
+                  
+                  <div class="lockscreen-tap-prompt" id="lockscreen-tap-area">
+                    <div class="pulsing-nfc-radar">
+                      <i class="fas fa-wifi" style="font-size:1.5rem; transform:rotate(90deg);"></i>
+                    </div>
+                    <div>
+                      <strong style="color:#ffffff; font-size:0.9rem; display:block;">Hold Card to Top Edge</strong>
+                      <span style="font-size:0.75rem; color:var(--text-secondary);">Click here to simulate an instant NFC tap</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Digital Profile View (Opened after tap) -->
+                <div class="phone-profile-view" id="simulator-profile-view">
+                  <button class="profile-view-close" id="close-profile-view-btn" title="Close Profile">
+                    <i class="fas fa-times"></i>
+                  </button>
+
+                  <div class="profile-avatar-banner">
+                    <div class="profile-avatar-circle">
+                      <img src="assets/tapzen-logo.jpg" alt="Profile Avatar">
+                    </div>
+                    <div class="profile-name">Team TapZen</div>
+                    <div class="profile-role">FOUNDERS: MOHAMMAD SUZAIN &amp; DHANUSH KUMAR K</div>
+                    <div class="profile-bio">Smart NFC Cards &amp; Tap Products. Tap • Connect • Grow.</div>
+                  </div>
+
+                  <!-- Save to Contacts Button -->
+                  <div class="profile-primary-action">
+                    <button id="profile-save-vcf-btn">
+                      <i class="fas fa-user-plus"></i> Save Contact to Phone (.vcf)
+                    </button>
+                  </div>
+
+                  <!-- Link Hub -->
+                  <div class="profile-links-list">
+                    <a href="https://www.instagram.com/tapzenn/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" class="profile-link-card" style="border-color: rgba(225, 48, 108, 0.45); background: rgba(225, 48, 108, 0.1);">
+                      <div class="profile-link-left">
+                        <div class="profile-link-icon" style="color:#e1306c; background: rgba(225, 48, 108, 0.2);"><i class="fab fa-instagram"></i></div>
+                        <div>
+                          <span style="display:block; font-weight:700;">Instagram</span>
+                          <span style="font-size:0.68rem; color:#ff4d88; font-weight:600;">@tapzenn • Tap to Follow</span>
+                        </div>
+                      </div>
+                      <i class="fas fa-arrow-up-right-from-square" style="font-size:0.75rem; color:#ff4d88;"></i>
+                    </a>
+
+                    <a href="#products" onclick="document.getElementById('close-profile-view-btn').click();" class="profile-link-card">
+                      <div class="profile-link-left">
+                        <div class="profile-link-icon" style="color:var(--accent-red);"><i class="fas fa-cart-shopping"></i></div>
+                        <div>
+                          <span style="display:block; font-weight:700;">Explore Products</span>
+                          <span style="font-size:0.68rem; color:var(--text-secondary);">Cards, Stands &amp; Pucks</span>
+                        </div>
+                      </div>
+                      <i class="fas fa-chevron-right" style="font-size:0.7rem; color:var(--text-muted);"></i>
+                    </a>
+
+                    <a href="https://wa.me/?text=Hi%20Team%20TapZen!%20I%20am%20interested%20in%20ordering%20NFC%20products." target="_blank" rel="noopener noreferrer" class="profile-link-card">
+                      <div class="profile-link-left">
+                        <div class="profile-link-icon" style="color:#25d366;"><i class="fab fa-whatsapp"></i></div>
+                        <span>WhatsApp Quick Contact</span>
+                      </div>
+                      <i class="fas fa-external-link-alt" style="font-size:0.7rem; color:var(--text-muted);"></i>
+                    </a>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Simulator Right: Controls & Explanation -->
+          <div class="tap-info-column">
+            <span class="badge badge-red" style="margin-bottom:1rem;">NO APP NEEDED</span>
+            <h3 style="font-size:2rem; margin-bottom:1rem;">Effortless Contact Sharing in 0.18 Seconds</h3>
+            <p style="margin-bottom:1.5rem; line-height:1.7;">
+              Unlike outdated QR-code apps or paper cards that get thrown in the trash, TapZen uses native NFC hardware built directly into every modern iPhone and Android device.
+            </p>
+
+            <div style="display:flex; flex-direction:column; gap:1.2rem; margin-bottom:2rem;">
+              <div style="display:flex; gap:1rem; align-items:flex-start;">
+                <div style="width:36px; height:36px; border-radius:10px; background:rgba(255,26,53,0.15); border:1px solid var(--border-red); display:flex; align-items:center; justify-content:center; color:var(--accent-red); flex-shrink:0;">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <div>
+                  <h4 style="font-size:1.05rem; margin-bottom:0.2rem;">Native Hardware Reading</h4>
+                  <p style="font-size:0.88rem;">Receiver doesn't need to download any app, create an account, or log in.</p>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:1rem; align-items:flex-start;">
+                <div style="width:36px; height:36px; border-radius:10px; background:rgba(255,26,53,0.15); border:1px solid var(--border-red); display:flex; align-items:center; justify-content:center; color:var(--accent-red); flex-shrink:0;">
+                  <i class="fas fa-arrows-rotate"></i>
+                </div>
+                <div>
+                  <h4 style="font-size:1.05rem; margin-bottom:0.2rem;">Update Details Anytime</h4>
+                  <p style="font-size:0.88rem;">Change your phone number, social links, or job title anytime without replacing the card.</p>
+                </div>
+              </div>
+
+              <div style="display:flex; gap:1rem; align-items:flex-start;">
+                <div style="width:36px; height:36px; border-radius:10px; background:rgba(255,26,53,0.15); border:1px solid var(--border-red); display:flex; align-items:center; justify-content:center; color:var(--accent-red); flex-shrink:0;">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <div>
+                  <h4 style="font-size:1.05rem; margin-bottom:0.2rem;">Live Tap Analytics</h4>
+                  <p style="font-size:0.88rem;">Track when and where your card was tapped, total views, and contact download metrics.</p>
+                </div>
+              </div>
+            </div>
+
+            <button id="simulator-trigger-tap" class="btn btn-primary btn-lg">
+              <i class="fas fa-hand-holding-hand"></i>
+              <span>Simulate NFC Tap Now</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Interactive 3D Card Studio / Customizer
+       ========================================================================== -->
+  <section class="customizer-section" id="card-studio">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-red section-tag">INTERACTIVE STUDIO</span>
+        <h2>Choose your TapZen Card now</h2>
+        <p>Crafted exclusively from high-durability PVC sheets and crystal-cast acrylic. Select our signature designs or personalize your custom card with your name and link destination in real-time.</p>
+      </div>
+
+      <div class="customizer-panel">
+        <div class="customizer-grid">
+          
+          <!-- Customizer Form Controls -->
+          <div class="customizer-form">
+            
+            <!-- 1. Material Finish Selection -->
+            <div>
+              <div class="form-group-label">
+                <span>1. Select Card Design &amp; Material</span>
+                <span id="customizer-price-display" style="color:var(--accent-red); font-weight:800; font-size:1.2rem;">₹999</span>
+              </div>
+              <div class="material-options-grid">
+                
+                <div class="material-chip-btn active" data-material="google_review">
+                  <div class="material-preview-dot" style="background-image: url('assets/card-google-review.jpg'); background-size: cover; border: 1px solid #ff1a35;"></div>
+                  <div class="material-name-txt">Google Review</div>
+                  <div style="font-size:0.65rem; color:var(--text-muted);">10 × 10 cm</div>
+                  <div class="material-price-txt">₹999</div>
+                </div>
+
+                <div class="material-chip-btn" data-material="instagram">
+                  <div class="material-preview-dot" style="background-image: url('assets/card-instagram.jpg'); background-size: cover; border: 1px solid #ff1a35;"></div>
+                  <div class="material-name-txt">Instagram</div>
+                  <div style="font-size:0.65rem; color:var(--text-muted);">10 × 10 cm</div>
+                  <div class="material-price-txt">₹999</div>
+                </div>
+
+                <div class="material-chip-btn" data-material="smart_menu">
+                  <div class="material-preview-dot" style="background-image: url('assets/card-smart-menu.jpg'); background-size: cover; border: 1px solid #ff1a35;"></div>
+                  <div class="material-name-txt">Smart Menu</div>
+                  <div style="font-size:0.65rem; color:var(--text-muted);">10 × 10 cm</div>
+                  <div class="material-price-txt">₹999</div>
+                </div>
+
+                <div class="material-chip-btn" data-material="whatsapp">
+                  <div class="material-preview-dot" style="background-image: url('assets/card-whatsapp.jpg'); background-size: cover; border: 1px solid #ff1a35;"></div>
+                  <div class="material-name-txt">WhatsApp</div>
+                  <div style="font-size:0.65rem; color:var(--text-muted);">10 × 10 cm</div>
+                  <div class="material-price-txt">₹999</div>
+                </div>
+
+                <div class="material-chip-btn" data-material="custom_card" style="border:1px dashed var(--accent-red);">
+                  <div class="material-preview-dot" style="background: radial-gradient(circle, #ff1a35, #000); box-shadow: 0 0 10px rgba(255,26,53,0.6); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 0.75rem;"><i class="fas fa-wand-magic-sparkles"></i></div>
+                  <div class="material-name-txt" style="color:#ff334b;">Customized Card</div>
+                  <div style="font-size:0.65rem; color:var(--text-muted);">10 × 10 cm</div>
+                  <div class="material-price-txt" style="color:#ff334b; font-weight:800;">₹1,199</div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- 2. Personal Information Fields -->
+            <div>
+              <label class="form-group-label" for="cust-input-name">2. Your Full Name (Laser Engraved)</label>
+              <input type="text" id="cust-input-name" class="input-custom-field" placeholder="e.g. MOHAMMAD SUZAIN" value="MOHAMMAD SUZAIN" maxlength="32">
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div>
+                <label class="form-group-label" for="cust-input-role">Job Title / Role</label>
+                <input type="text" id="cust-input-role" class="input-custom-field" placeholder="e.g. FOUNDER" value="FOUNDER" maxlength="24">
+              </div>
+              <div>
+                <label class="form-group-label" for="cust-input-company">Company / Brand</label>
+                <input type="text" id="cust-input-company" class="input-custom-field" placeholder="e.g. TAPZEN" value="TAPZEN" maxlength="20">
+              </div>
+            </div>
+
+            <!-- 3. NFC Functionality Target -->
+            <div>
+              <label class="form-group-label" for="cust-select-destination">
+                3. Primary NFC Tap Destination
+                <span>Can be changed anytime</span>
+              </label>
+              <select id="cust-select-destination" class="input-custom-field" style="background:#161822; color:#fff;">
+                <option value="profile">TapZen Digital Cloud Profile (Contact + All Links)</option>
+                <option value="google_review">Direct Google Review 5-Star Prompt</option>
+                <option value="website">Custom Company Website URL</option>
+                <option value="socials">Instagram / LinkedIn Direct Link</option>
+              </select>
+            </div>
+
+            <!-- Action Button -->
+            <button id="customizer-add-cart-btn" class="btn btn-primary btn-lg" style="margin-top:0.5rem;">
+              <i class="fas fa-cart-plus"></i>
+              <span>Add Custom Card to Order</span>
+            </button>
+
+          </div>
+
+          <!-- Customizer Live 3D Preview (10 x 10 cm Square) -->
+          <div class="customizer-preview-container">
+            <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.9rem;">
+              <span class="badge badge-red badge-glow"><i class="fas fa-ruler-combined"></i> 10 × 10 CM SQUARE SIZE</span>
+              <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-heading);">LASER-CUT PVC / ACRYLIC</span>
+            </div>
+
+            <div class="card-square-scene" id="customizer-card-scene">
+              <div class="card-3d-object" id="customizer-card-obj">
+                
+                <!-- Front Preview -->
+                <div class="card-face card-face-front card-finish-matte-black" style="padding: 1.6rem; border-radius: 18px;">
+                  <div class="card-sheen"></div>
+                  
+                  <div class="card-top-row">
+                    <div class="card-brand-display">
+                      <img src="assets/tapzen-logo.jpg" alt="Logo">
+                      <span class="card-logo-text">Tap<span class="text-red">Zen</span></span>
+                    </div>
+                    <div class="card-chip-module">
+                      <div class="microchip-graphic"></div>
+                      <div class="nfc-icon-radiate">
+                        <svg class="nfc-wave-svg" viewBox="0 0 24 24">
+                          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Central 10x10 cm Tap Target Zone -->
+                  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 1.2rem 0; text-align: center;">
+                    <div style="width: 72px; height: 72px; border-radius: 50%; border: 2px dashed rgba(255, 26, 53, 0.45); display: flex; align-items: center; justify-content: center; background: rgba(255, 26, 53, 0.08); box-shadow: 0 0 20px rgba(255, 26, 53, 0.2);">
+                      <i class="fas fa-wifi" style="font-size: 1.6rem; color: var(--accent-red); transform: rotate(90deg);"></i>
+                    </div>
+                    <span style="font-size: 0.65rem; font-family: var(--font-heading); color: #fff; margin-top: 0.5rem; letter-spacing: 0.12em; text-transform: uppercase;">10 × 10 CM NFC TOUCHPOINT</span>
+                  </div>
+
+                  <div class="card-bottom-row">
+                    <div class="card-user-info">
+                      <div class="card-holder-name" id="cust-preview-name" style="font-size: 1.05rem;">MOHAMMAD SUZAIN</div>
+                      <div class="card-holder-role" id="cust-preview-role">FOUNDER</div>
+                    </div>
+                    <div class="card-company-tag" id="cust-preview-company">TAPZEN</div>
+                  </div>
+                </div>
+
+                <!-- Back Preview -->
+                <div class="card-face card-face-back" style="padding: 1.6rem; border-radius: 18px;">
+                  <div class="card-magstripe"></div>
+                  <div class="card-back-body" style="flex-direction: column; align-items: center; justify-content: center; margin-top: 45px; text-align: center;">
+                    <div class="card-qr-box" style="width: 90px; height: 90px; margin-bottom: 0.8rem;">
+                      <svg viewBox="0 0 100 100" fill="#000">
+                        <rect x="10" y="10" width="25" height="25" fill="#000"/>
+                        <rect x="15" y="15" width="15" height="15" fill="#fff"/>
+                        <rect x="18" y="18" width="9" height="9" fill="#000"/>
+                        <rect x="65" y="10" width="25" height="25" fill="#000"/>
+                        <rect x="70" y="15" width="15" height="15" fill="#fff"/>
+                        <rect x="73" y="18" width="9" height="9" fill="#000"/>
+                        <rect x="10" y="65" width="25" height="25" fill="#000"/>
+                        <rect x="15" y="70" width="15" height="15" fill="#fff"/>
+                        <rect x="18" y="73" width="9" height="9" fill="#000"/>
+                        <rect x="42" y="42" width="16" height="16" fill="#ff1a35"/>
+                      </svg>
+                    </div>
+                    <div class="card-back-instructions" style="margin-left: 0; text-align: center;">
+                      <strong style="font-size: 0.95rem;">TAP OR SCAN BACKUP</strong>
+                      <span id="cust-preview-destination" style="color: var(--accent-red); font-weight: 700; display: block; font-size: 0.8rem;">TapZen Digital Bio Hub</span>
+                      <div style="font-size: 0.68rem; color: var(--text-muted); margin-top: 4px;">10 × 10 CM Precision Laser-Cut Acrylic / PVC</div>
+                    </div>
+                    <div class="card-hologram-seal" style="margin-top: 0.8rem;">
+                      <span>TZ</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Flip Back Button -->
+            <button id="customizer-flip-btn" class="control-pill-btn" style="margin-top:1.5rem;">
+              <i class="fas fa-sync-alt"></i> View Back (QR & Chip)
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Product Store & Catalog
+       ========================================================================== -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-red section-tag">THE TAPZEN ECOSYSTEM</span>
+        <h2>Explore All NFC Products</h2>
+        <p>From individual luxury cards to smart countertop stands and phone pucks, explore our full suite of contactless hardware.</p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="catalog-filter-bar">
+        <button class="filter-pill active" data-category="all">All Products</button>
+        <button class="filter-pill" data-category="cards">Smart Business Cards</button>
+        <button class="filter-pill" data-category="stands">Review & Cafe Stands</button>
+        <button class="filter-pill" data-category="tags">Smart Tags & Keychains</button>
+        <button class="filter-pill" data-category="business">Corporate Teams</button>
+      </div>
+
+      <!-- Products Grid (Rendered via JS) -->
+      <div class="products-grid" id="products-grid-container">
+        <!-- Injected dynamically by products.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Comparison Matrix: TapZen vs Traditional Paper Cards
+       ========================================================================== -->
+  <section class="comparison-section" id="comparison">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-red section-tag">THE UPGRADE</span>
+        <h2>Why Switch to TapZen?</h2>
+        <p>See why forward-thinking professionals and businesses are retiring paper cards forever.</p>
+      </div>
+
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Feature Comparison</th>
+              <th class="highlight-col"><span class="text-red">TapZen Smart NFC</span></th>
+              <th>Traditional Paper Cards</th>
+              <th>Generic QR Link Apps</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="feat-name">Connection Speed</td>
+              <td class="highlight-col"><span class="check-green"><i class="fas fa-bolt"></i> Instant 0.18s Tap</span></td>
+              <td><span class="cross-red"><i class="fas fa-times"></i> Manual Typing</span></td>
+              <td>3-5s Camera Scanning</td>
+            </tr>
+            <tr>
+              <td class="feat-name">App Required for Receiver?</td>
+              <td class="highlight-col"><span class="check-green"><i class="fas fa-check"></i> Zero App Needed</span></td>
+              <td>Zero</td>
+              <td>Often needs scanner app</td>
+            </tr>
+            <tr>
+              <td class="feat-name">Update Info After Purchase</td>
+              <td class="highlight-col"><span class="check-green"><i class="fas fa-check"></i> Unlimited Real-time</span></td>
+              <td><span class="cross-red"><i class="fas fa-times"></i> Must reprint entire box</span></td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="feat-name">Environmental Impact</td>
+              <td class="highlight-col"><span class="check-green"><i class="fas fa-leaf"></i> 100% Eco-Sustainable</span></td>
+              <td><span class="cross-red"><i class="fas fa-times"></i> 88% Thrown in trash</span></td>
+              <td>Digital only</td>
+            </tr>
+            <tr>
+              <td class="feat-name">Real-Time Tap Analytics</td>
+              <td class="highlight-col"><span class="check-green"><i class="fas fa-check"></i> Detailed Clicks & Views</span></td>
+              <td><span class="cross-red"><i class="fas fa-times"></i> Completely untracked</span></td>
+              <td>Basic web clicks</td>
+            </tr>
+            <tr>
+              <td class="feat-name">Direct 1-Click Phone Save (.vcf)</td>
+              <td class="highlight-col"><span class="check-green"><i class="fas fa-check"></i> Direct Address Book Save</span></td>
+              <td><span class="cross-red"><i class="fas fa-times"></i> Manual contact entry</span></td>
+              <td>Sometimes blocked</td>
+            </tr>
+            <tr>
+              <td class="feat-name">Hardware Luxury & Durability</td>
+              <td class="highlight-col"><span class="check-green"><i class="fas fa-shield-alt"></i> Steel, Carbon, Matte PVC</span></td>
+              <td><span class="cross-red"><i class="fas fa-times"></i> Bends, stains, tears</span></td>
+              <td>No physical presence</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       How It Works (3 Steps)
+       ========================================================================== -->
+  <section class="how-it-works-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-red section-tag">SIMPLE SETUP</span>
+        <h2>How TapZen Works</h2>
+        <p>No complicated software or developer skills needed. You can be up and running in minutes.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num-bubble">01</div>
+          <h3 class="step-title">Choose Your Style</h3>
+          <p class="step-desc">
+            Pick from our Google Review, Instagram Follow, Smart Menu, or WhatsApp Connect cards — crafted from high-grade PVC sheets and cast acrylic. Customize with your name or company logo.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num-bubble">02</div>
+          <h3 class="step-title">Set Up Your Profile</h3>
+          <p class="step-desc">
+            Use our intuitive digital dashboard to add your phone number, social links, website, portfolio, payment handles, or Google Review URL.
+          </p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num-bubble">03</div>
+          <h3 class="step-title">Tap & Grow</h3>
+          <p class="step-desc">
+            Simply tap your TapZen product against any modern smartphone. Your details open immediately on their screen ready to save with one touch.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Corporate / Enterprise Banner
+       ========================================================================== -->
+  <section class="corporate-banner-section">
+    <div class="container">
+      <div class="corporate-banner-card">
+        <div class="corporate-banner-content">
+          <span class="badge badge-red" style="margin-bottom:0.8rem;">FOR TEAMS & ENTERPRISES</span>
+          <h3>Equip Your Entire Organization</h3>
+          <p>
+            Custom company-branded cards with your Pantone colors, centralized employee onboarding, team analytics, and bulk volume discounts for 10 to 5,000+ cards.
+          </p>
+        </div>
+        <button id="open-corporate-modal-btn" class="btn btn-primary btn-lg" style="white-space:nowrap;">
+          <i class="fas fa-building"></i> Request Corporate Quote
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ Section
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="badge badge-red section-tag">GOT QUESTIONS?</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Everything you need to know about TapZen NFC technology and compatibility.</p>
+      </div>
+
+      <div class="faq-list">
+        
+        <div class="faq-item active">
+          <button class="faq-question-btn">
+            <span>Does the other person need an app or TapZen card to receive my info?</span>
+            <i class="fas fa-chevron-down faq-toggle-icon"></i>
+          </button>
+          <div class="faq-answer-body">
+            <strong>No!</strong> The receiver does not need any app, account, or special software installed. When you tap your TapZen card against their smartphone, their device automatically detects the NFC radio frequency and instantly opens your profile link in their native browser.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Which smartphones are compatible with TapZen?</span>
+            <i class="fas fa-chevron-down faq-toggle-icon"></i>
+          </button>
+          <div class="faq-answer-body">
+            TapZen is universally compatible with almost every modern smartphone. Every iPhone released since 2018 (iPhone XR, XS, 11, 12, 13, 14, 15, 16+) has background NFC reading enabled permanently. Over 95% of Android phones (Samsung, Google Pixel, OnePlus, Xiaomi, Motorola) also support instant NFC reading. For older devices, every card includes a high-contrast backup QR code on the back.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Can I change my information after I receive my card?</span>
+            <i class="fas fa-chevron-down faq-toggle-icon"></i>
+          </button>
+          <div class="faq-answer-body">
+            Yes, absolutely! Your card connects to your dynamic TapZen cloud profile. If you change your phone number, email, company, or social handles, simply log into your portal and update them. Your physical card will immediately share your updated information on the next tap without needing to replace the card.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>Does TapZen require a monthly subscription fee?</span>
+            <i class="fas fa-chevron-down faq-toggle-icon"></i>
+          </button>
+          <div class="faq-answer-body">
+            No mandatory subscription is required! Your purchase includes lifetime hosting for your TapZen digital profile and unlimited taps. We also offer optional premium add-ons for corporate teams needing CRM integrations (HubSpot, Salesforce) and advanced team analytics.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question-btn">
+            <span>How durable are TapZen cards? Are they waterproof?</span>
+            <i class="fas fa-chevron-down faq-toggle-icon"></i>
+          </button>
+          <div class="faq-answer-body">
+            All TapZen cards are rated IP68 waterproof and shatter-resistant. Our high-grade PVC and cast acrylic cards are precision manufactured so your prints, engraving, and embedded NFC microchips last for years without fading or peeling.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        
+        <div>
+          <div class="brand-logo-wrap" style="margin-bottom:0.6rem;">
+            <img src="assets/tapzen-logo.jpg" alt="TapZen Logo" class="brand-logo-img">
+            <div class="brand-name-group">
+              <div class="brand-title">
+                <span class="tap">Tap</span><span class="zen">Zen</span>
+              </div>
+              <span class="brand-tagline-mini">TAP • CONNECT • GROW</span>
+            </div>
+          </div>
+          <p class="footer-brand-bio">
+            Pioneering the future of contactless networking, smart hospitality stands, and intelligent NFC hardware solutions for modern professionals.
+          </p>
+          <div style="display:flex; gap:0.8rem; margin-top:1.2rem; font-size:1.1rem;">
+            <a href="https://www.instagram.com/tapzenn/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" style="color:var(--text-secondary);" title="Follow @tapzenn on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" style="color:var(--text-secondary);"><i class="fab fa-linkedin"></i></a>
+            <a href="#" style="color:var(--text-secondary);"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" style="color:var(--text-secondary);"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Products</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#card-studio">Google Review Card (PVC/Acrylic)</a></li>
+            <li class="footer-link-item"><a href="#card-studio">Instagram Follow Card</a></li>
+            <li class="footer-link-item"><a href="#card-studio">Smart Menu Card</a></li>
+            <li class="footer-link-item"><a href="#card-studio">WhatsApp Connect Card</a></li>
+            <li class="footer-link-item"><a href="#card-studio">Customized Personalized Card</a></li>
+            <li class="footer-link-item"><a href="#products">Google Review Stands</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Solutions</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#corporate-modal">Corporate & Enterprise Teams</a></li>
+            <li class="footer-link-item"><a href="#products">Restaurants & Cafes</a></li>
+            <li class="footer-link-item"><a href="#products">Real Estate Professionals</a></li>
+            <li class="footer-link-item"><a href="#products">Creators & Influencers</a></li>
+            <li class="footer-link-item"><a href="#simulator">Live Tap Simulator</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Guarantees</h4>
+          <ul class="footer-links-list">
+            <li class="footer-link-item"><a href="#"><i class="fas fa-shield-halved" style="color:var(--accent-red); margin-right:4px;"></i> 1-Year Hardware Warranty</a></li>
+            <li class="footer-link-item"><a href="#"><i class="fas fa-truck-fast" style="color:var(--accent-red); margin-right:4px;"></i> Free Delivery Across India</a></li>
+            <li class="footer-link-item"><a href="#"><i class="fas fa-headset" style="color:var(--accent-red); margin-right:4px;"></i> 24/7 Setup Assistance</a></li>
+            <li class="footer-link-item"><a href="#"><i class="fas fa-rotate-left" style="color:var(--accent-red); margin-right:4px;"></i> 30-Day Money Back Guarantee</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <div>&copy; 2026 TapZen Technologies Inc. All rights reserved. Tap, Connect, Grow.</div>
+        <div style="display:flex; gap:1.5rem;">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security & Encryption</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Shopping Cart Slide-Out Drawer
+       ========================================================================== -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer">
+      <div class="cart-drawer-header">
+        <div class="cart-drawer-title">
+          <i class="fas fa-shopping-bag" style="color:var(--accent-red);"></i>
+          <span>Your TapZen Cart</span>
+        </div>
+        <button class="cart-close-btn" id="cart-close-btn">&times;</button>
+      </div>
+
+      <div class="cart-items-list" id="cart-drawer-items">
+        <!-- Rendered via JS -->
+      </div>
+
+      <div class="cart-drawer-footer">
+        <div class="cart-discount-input-group">
+          <input type="text" id="cart-promo-input" class="input-custom-field" placeholder="Promo code (e.g. TAPZEN10)" style="font-size:0.85rem; padding:0.6rem 0.9rem;">
+          <button id="cart-apply-promo-btn" class="btn btn-secondary btn-sm" style="white-space:nowrap;">Apply</button>
+        </div>
+
+        <div class="cart-summary-line">
+          <span>Subtotal</span>
+          <span id="cart-subtotal-val">₹0</span>
+        </div>
+        <div class="cart-summary-line">
+          <span>Discount</span>
+          <span id="cart-discount-val" style="color:#10b981;">-₹0</span>
+        </div>
+        <div class="cart-summary-line">
+          <span>Shipping</span>
+          <span style="color:#10b981; font-weight:700;">FREE (India)</span>
+        </div>
+        <div class="cart-total-line">
+          <span>Total</span>
+          <span id="cart-total-val" class="text-gradient-red">₹0</span>
+        </div>
+
+        <button id="cart-checkout-proceed-btn" class="btn btn-primary" style="width:100%; padding:0.9rem;">
+          <i class="fas fa-lock"></i>
+          <span>Secure Checkout</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Checkout Modal
+       ========================================================================== -->
+  <div class="modal-backdrop" id="checkout-modal">
+    <div class="modal-box">
+      <button class="modal-close-x" id="checkout-modal-close">&times;</button>
+      <div style="margin-bottom:1.8rem;">
+        <span class="badge badge-red" style="margin-bottom:0.5rem;">INSTANT DISPATCH</span>
+        <h2 style="font-size:1.8rem;">Complete Your TapZen Order</h2>
+        <p style="font-size:0.9rem;">Enter your shipping details and customized engraving specifications below.</p>
+      </div>
+
+      <form id="checkout-order-form" style="display:flex; flex-direction:column; gap:1.2rem;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div>
+            <label class="form-group-label" for="checkout-cust-name">Full Name</label>
+            <input type="text" id="checkout-cust-name" class="input-custom-field" required placeholder="Mohammad Suzain" value="Mohammad Suzain">
+          </div>
+          <div>
+            <label class="form-group-label" for="checkout-cust-email">Email Address</label>
+            <input type="email" id="checkout-cust-email" class="input-custom-field" required placeholder="alex@tapzen.io" value="alex@tapzen.io">
+          </div>
+        </div>
+
+        <div>
+          <label class="form-group-label" for="checkout-cust-address">Shipping Address</label>
+          <input type="text" id="checkout-cust-address" class="input-custom-field" required placeholder="123 Innovation Boulevard, Suite 400">
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:1rem;">
+          <div>
+            <label class="form-group-label" for="checkout-cust-city">City</label>
+            <input type="text" id="checkout-cust-city" class="input-custom-field" required placeholder="San Francisco">
+          </div>
+          <div>
+            <label class="form-group-label" for="checkout-cust-state">State / Province</label>
+            <input type="text" id="checkout-cust-state" class="input-custom-field" required placeholder="CA">
+          </div>
+          <div>
+            <label class="form-group-label" for="checkout-cust-zip">Postal Code</label>
+            <input type="text" id="checkout-cust-zip" class="input-custom-field" required placeholder="94107">
+          </div>
+        </div>
+
+        <div>
+          <label class="form-group-label" for="checkout-cust-notes">Laser Engraving / NFC Encoding Instructions (Optional)</label>
+          <textarea id="checkout-cust-notes" class="input-custom-field" rows="2" placeholder="Any special logo placement notes or default URL link you want pre-programmed..."></textarea>
+        </div>
+
+        <div style="background:rgba(255,255,255,0.03); border:1px solid var(--border-subtle); border-radius:12px; padding:1rem;">
+          <div class="form-group-label" style="margin-bottom:0.5rem;">Select Payment Method</div>
+          <div style="display:flex; gap:1rem; flex-wrap:wrap; font-size:0.85rem;">
+            <label style="display:flex; align-items:center; gap:0.4rem; cursor:pointer;">
+              <input type="radio" name="paymethod" checked> Credit / Debit Card
+            </label>
+            <label style="display:flex; align-items:center; gap:0.4rem; cursor:pointer;">
+              <input type="radio" name="paymethod"> Apple Pay / Google Pay
+            </label>
+            <label style="display:flex; align-items:center; gap:0.4rem; cursor:pointer;">
+              <input type="radio" name="paymethod"> UPI / Direct Bank Transfer
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="margin-top:0.5rem;">
+          <i class="fas fa-check-circle"></i> Place Order & Encode Cards
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Product Technical Specs Modal
+       ========================================================================== -->
+  <div class="modal-backdrop" id="product-specs-modal">
+    <div class="modal-box">
+      <button class="modal-close-x">&times;</button>
+      <div id="modal-product-content">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Corporate / Bulk Order Modal
+       ========================================================================== -->
+  <div class="modal-backdrop" id="corporate-modal">
+    <div class="modal-box">
+      <button class="modal-close-x" id="corporate-modal-close">&times;</button>
+      <div style="margin-bottom:1.5rem;">
+        <span class="badge badge-red" style="margin-bottom:0.5rem;">ENTERPRISE TEAMS</span>
+        <h2 style="font-size:1.8rem;">TapZen Corporate Quote</h2>
+        <p style="font-size:0.9rem;">Custom-branded NFC cards with your company logo and centralized directory management.</p>
+      </div>
+
+      <form id="corporate-quote-form" style="display:flex; flex-direction:column; gap:1.1rem;">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div>
+            <label class="form-group-label" for="corp-name">Contact Name</label>
+            <input type="text" id="corp-name" class="input-custom-field" required placeholder="Your Name">
+          </div>
+          <div>
+            <label class="form-group-label" for="corp-company">Company Name</label>
+            <input type="text" id="corp-company" class="input-custom-field" required placeholder="Company Inc.">
+          </div>
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div>
+            <label class="form-group-label" for="corp-email">Work Email</label>
+            <input type="email" id="corp-email" class="input-custom-field" required placeholder="you@company.com">
+          </div>
+          <div>
+            <label class="form-group-label" for="corp-qty">Estimated Quantity</label>
+            <select id="corp-qty" class="input-custom-field" style="background:#161822; color:#fff;">
+              <option value="10-25">10 - 25 Cards (15% Off)</option>
+              <option value="26-50">26 - 50 Cards (25% Off)</option>
+              <option value="51-100">51 - 100 Cards (35% Off)</option>
+              <option value="100+">100+ Cards (Custom Enterprise Plan)</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="form-group-label" for="corp-material">Preferred Material</label>
+          <select id="corp-material" class="input-custom-field" style="background:#161822; color:#fff;">
+            <option>Google Review Cards (PVC Sheet)</option>
+            <option>Instagram Follow Cards (PVC Sheet)</option>
+            <option>Smart Menu Cards (Cast Acrylic)</option>
+            <option>WhatsApp Connect Cards (Cast Acrylic)</option>
+            <option>Customized Branded Cards (PVC / Acrylic)</option>
+            <option>Countertop Google Review Acrylic Stands</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="form-group-label" for="corp-message">Team Requirements</label>
+          <textarea id="corp-message" class="input-custom-field" rows="3" placeholder="Tell us about your team setup, CRM needs (HubSpot, Salesforce), or custom vector branding..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg">
+          <i class="fas fa-paper-plane"></i> Submit Quote Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
